@@ -44,7 +44,7 @@ with open(file_to_load) as election_data:
 
 
 # Open a text file to save the output
-with open(file_to_output, "w") as txt_file:
+#with open(file_to_output, "w") as txt_file:
 
     # Print the total vote count (to terminal)
 
