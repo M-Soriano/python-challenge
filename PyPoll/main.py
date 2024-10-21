@@ -56,7 +56,7 @@ with open(fl) as ed: # ed is election data #generic starter code, some modificat
 
   #saving the percent in dictionary for quick reference
         #inputing a print funtcion to a variable of the result to make it easier to print with output print statement
-        percentage_out += f"\n{outcome}: {pt:.3%} ({votes})\n"
+        percentage_out += f"\n{outcome}: {pt:.3%} ({candicates_votes[outcome]})\n"
 
 #getting the winner by using max and get() function. 
 #use example to get this result
