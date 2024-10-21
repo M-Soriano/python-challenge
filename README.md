@@ -21,6 +21,11 @@ Greatest Decrease in Profits: Feb-14 ($-1825558)
 
 
 
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+
+
+
 
 Results for the pyPoll election_data.csv file is in the sub-folder analysis of pyPoll folder, under the title election_analysis.txt.
 
