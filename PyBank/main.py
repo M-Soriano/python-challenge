@@ -3,12 +3,12 @@ import os
 import csv
 
 #Loding files  and outputing files
-fl= os.path.join("Resources", "budget_data.csv")# input file
-fo= os.path.join("analysis","analysis_results.txt")# output file
+fl= os.path.join("Resources", "budget_data.csv")# input file#generic starter code, some modifications 
+fo= os.path.join("analysis","analysis_results.txt")# output file#generic starter code, some modifications 
 
 #variables
-total_month = 0
-total_net = 0
+total_month = 0 #generic starter code, some modifications
+total_net = 0 #generic starter code, some modifications
 average_change = 0
 greatest_increase =0
 greatest_decrease =0
@@ -16,13 +16,13 @@ changes =[]
 date=[]
 
 
-with open(fl) as fd: # fd is financial data
-    data = csv.reader(fd, delimiter=",")# finding the delimiter
+with open(fl) as fd: # fd is financial data#generic starter code, some modifications
+    data = csv.reader(fd, delimiter=",")# finding the delimiter#generic starter code, some modifications
 
     #skipping that header
-    header = next(data)
+    header = next(data)#generic starter code, some modifications
     # extracting first row to avoid appending to netchange list
-    row_one = next(data)
+    row_one = next(data)#generic starter code, some modifications
     # adding  a count because first row is beeen skip according to the starter code (would start count are one, but starter code has it as o)
     total_month += 1  
     # adding first to totalnet and making it an float for number with decimals.
@@ -40,7 +40,9 @@ with open(fl) as fd: # fd is financial data
 
 
 
-    for row in data:
+    for row in data:#generic starter code, some modifications
+        # Print a loading indicator (for large datasets)
+       #print(". ", end="") #generic starter code, did not use
         total_month += 1     
         total_net += int(row[1])
         
@@ -86,7 +88,7 @@ results= (
 print(results)
 
 #writing results to a text file
-with open(fo,"w" ) as txt_file:
+with open(fo,"w" ) as txt_file:#generic starter code, some modifications
     txt_file.write(results)
     
 
